@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./assets/css/base.css">
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <script src="./assets/js/script.js" defer></script>
+  <title>Frontend Mentor | Tip calculator app</title>
+
+</head>
+<body>
+  <div class="background">
+    <div class="container grid wide">
+      <div class="splitter">
+        <p>SPLI</p>
+        <p>TTER</p>
+      </div>
+     
+      <div class="calculator row">
+        <div class="calculating col l-6 m-6 c-12">
+          <p class="title">Bill</p>
+          <div class="money-screen">
+            <img src="./assets/images/icon-dollar.svg" alt="" class="dollar-sign">       
+              <input type="text" class="bill-input" placeholder="0">      
+          </div>
+          <div class="tips-button">
+            <p class="title">
+                Select Tip %
+            </p>
+            <div class="buttons row">
+              <div class="col l-4 c-4">
+                <div class="btns">
+                  5%        
+                </div>
+              </div>
+              
+              <div class="col l-4 c-4">
+                <div class="btns">
+                  10%
+                </div>
+              </div>           
+                <div class="col l-4 c-4">
+                  <div class="btns primary">
+                    15%
+                  </div>
+                </div>
+               
+                <div class="col l-4 c-4">
+                  <div class="btns">
+                    25%
+                  </div>
+                </div>
+                
+                <div class="col l-4 c-4 ">
+                  <div class="btns">
+                    50%
+                  </div>
+                </div>
+                
+                <div class="custom col l-4 c-4">              
+                    <input type="text" class="custom-input" placeholder='Custom'>          
+                    
+                </div>
+               
+            </div>
+          </div>
+          <div class="peoples">
+            <div class="peoples-txt">
+              <p class="title">
+                Number of People
+              </p>
+              <p class="peoples-error">
+                
+              </p>
+            </div>
+            <div class="peoples_choose">
+              <img src="./assets/images/icon-person.svg" alt="" class="person">
+              <input type="text"class='people-input' placeholder='0'>
+            </div>
+          </div>
+        </div>
+        <div class="bills col l-6 m-6 c-12">
+          <div class="results">
+            <div class="screen-result">
+              <p class="title title--bill">
+                Tip Amount
+                <span class="sub-title">
+                  / person
+                </span>
+              </p>
+  
+              <div class="tips">
+                $
+                <p class="tips-result">0.00</p>
+              </div>
+            </div>
+            <div class="screen-result">
+              <p class="title title--bill">
+                Total
+                <span class="sub-title">
+                  / person
+                </span>
+              </p>
+              <div class="total">
+                $
+                <p class="total-result">0.00</p>
+              </div>
+            </div>
+          </div>
+          <div class="btns reset-buttons">
+            Reset
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</body>
+</html>

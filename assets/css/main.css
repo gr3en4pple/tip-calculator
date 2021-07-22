@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+:root {
+    --bold-blue: hsl(172, 67%, 45%);
+    --very-dark-blue : hsl(183, 100%, 15%);
+    --dark-gray-blue: hsl(186, 14%, 43%);
+    --light-gray-blue: hsl(185, 41%, 84%);
+    --white: hsl(0, 0%, 100%);
+    --bold:700;
+}
+*,*::before,*::after{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Space Mono', monospace;
+    font-weight: 400;
+    font-size: 62.5%;
+}
+
+input[type='text'] {
+        border:none;
+        outline:none;
+       
+}
+
+.background {
+    background-color: var(--light-gray-blue);
+    height:100vh;
+}
+
+.container {
+    display:flex;
+    height:100%;
+    
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+.splitter{
+    font-size: 24px;
+    letter-spacing: 5px;
+    color:var(--very-dark-blue);
+    font-weight:var(--bold);
+}
+.calculator {
+    border-radius: 12px;
+    background-color: var(--white);
+    padding:20px;
+    display:flex;
+    box-shadow:0 5px 8px rgba(0,0,0,0.08);
+}
+
+.calculator > * {
+    padding: 12px;
+ 
+}
+
+.calculaing {
+
+    
+}
+
+.bills {
+    background:var(--very-dark-blue);
+    border-radius: 12px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    display:flex;
+    flex-direction: column;
+}
+.title {
+    color: var(--dark-gray-blue);
+   margin:5px 0;
+}
+
+.dollar-sign,.person {
+    height:20px;
+
+}
+.money-screen,.peoples_choose {
+    display:flex;
+    font-weight:var(--bold);
+    background: hsl(189, 41%, 97%);
+    border-radius: 5px;
+    padding:0 10px;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow:5px 5px 8px rgba(0,0,0,0.08);
+    padding:10px 5px;
+    border:1px solid transparent;
+}
+
+.money-screen:focus {
+    border:1px solid var(--bold-blue);
+}
+
+.bill-input,.people-input {   
+    font-size:24px;
+    background:inherit;
+    color:var(--very-dark-blue);
+    direction:rtl;
+    width:100%;
+}
+
+
+
+
+.buttons {
+    display:flex;
+    justify-content: space-around;
+}
+
+.col {
+    margin: 5px 0;
+}
+.btns {
+    font-weight:var(--bold);
+    color:white;
+    font-size:20px;
+    background:var(--very-dark-blue);
+    text-align:center;
+    cursor:pointer;
+    border-radius:3px;
+    padding: 5px 0;
+    transition: 0.3s ease-in-out;
+}
+
+.custom {
+    margin: 5px 0;
+    position:relative;
+}
+
+
+.custom-input {
+    padding: 10px 3px;
+    font-size:20px;
+    width:100%;
+    font-weight:var(--bold);
+    color:var(--very-dark-blue);
+    background:hsl(189, 41%, 97%);
+    border-radius:5px;
+    box-shadow:0 5px 8px rgba(0,0,0,0.1);
+    direction:rtl;
+    outline:2px solid red;
+}
+
+.custom-input:focus {
+    border: 1px solid var(--bold-blue);
+}
+.custom-input::placeholder {
+    text-align: center;
+  
+}
+.peoples-txt{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0;
+}
+.peoples-error {
+    color:red;
+    font-size: 12px;
+    transition: .2s ease-in;
+}
+
+.focus-border {
+    border:1px solid var(--bold-blue);
+}
+
+
+.tips-button {
+    margin: 20px 0;
+}
+
+.results {
+    margin: 20px 0;
+}
+
+.title--bill {
+    width:30%;
+    display:flex;
+    flex-direction: column;
+    color:var(--white);
+    font-weight: var(--bold);
+    font-size: 14px;
+}
+
+.sub-title {
+    color:var(--dark-gray-blue);
+    font-size:12px;
+}
+.screen-result {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.tips,.total {
+    font-size:2.4rem;
+    color:var(--bold-blue);
+    font-weight: var(--bold);
+    display:flex;
+    word-break:break-word;
+    
+}
+
+.clicked {
+    background:var(--bold-blue);
+    color:var(--very-dark-blue);
+}
+.btns:hover {
+    background:var(--bold-blue);
+    color:var(--very-dark-blue);
+}
+
+.reset-buttons{
+    color:var(--very-dark-blue);
+    background:var(--bold-blue);
+    margin: 20px;
+}
+.reset-buttons:hover {
+    background:var(--light-gray-blue);
+}
+
+.shaking {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    perspective: 1000px;
+  }
+
+@keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
